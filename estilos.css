@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +44,7 @@ main{
 }
 .presentacion {
     width: 100%;
-    height: auto;
+    height: 200px;
 }
 .presentacion h1 {
     font-family: roboto, sans-serif;
@@ -63,10 +64,8 @@ main{
     padding-top: 20px;
     line-height: 30px;
 }
-.derecha{
+.derecha {
     height: 540px;
-    width: 45%;
-    height: auto;
     float: right;
     display: flex;
 }
@@ -116,6 +115,10 @@ main{
     font-family: roboto, sans-serif;
     font-weight:400;
     font-size: 15px;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: start;
 }
 .item2{
     height: 400px;
@@ -161,6 +164,16 @@ main{
     font-weight: bold;
     color: black;
     font-size: 15px;
+}
+.mas-info{
+    text-decoration: none;
+    padding: .5rem;
+    color:rgb(255, 255, 255);
+    background-color: rgb(180, 217, 207);
+}
+.mas-info:hover {
+    background-color: black;
+    color: white;
 }
 .presentacion a:hover{
     color: #333;
@@ -241,6 +254,45 @@ footer{
     color: gray;
     font-size: 15px;
     cursor: pointer;
+}
+.imagen_der, .imagen_izq {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    float: left;
+}
+.contenedor_branding{
+    background-color: white;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap: 1rem;
+    }
+.info_ic .branding {
+    color: gray;
+    font-family: roboto, sans-serif;
+    font-weight:400;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.info_ic .pbranding{
+    color: gray;
+    font-family: roboto, sans-serif;
+    font-weight:200;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.info_ic .ic {
+    color: gray;
+    text-align: left;
+    font-family: roboto, sans-serif;
+    font-weight:400;
+    font-size: 35px;
+    margin-left: 45px;
+    margin-top: 20px;
 }
 footer p{
     margin-bottom: 20px;
