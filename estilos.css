@@ -38,15 +38,19 @@ header{
     text-decoration: underline;
 }
 main{
-    height: 540px;
+    height: auto;
     width: 100%;
     background-color: rgb(180, 217, 207);
 }
 .presentacion {
     width: 100%;
+    height: 400px;
+}
+.presentacion_corta{
+    width: 100%;
     height: 200px;
 }
-.presentacion h1 {
+.presentacion h1, .presentacion_corta h1 {
     font-family: roboto, sans-serif;
     font-weight: 100;
     color: rgb(255, 255, 255);
@@ -55,7 +59,7 @@ main{
     padding-top: 60px;
     line-height: 60px;
 } 
-.presentacion p{
+.presentacion p, .presentacion_corta p{
     font-family: roboto, sans-serif;
     font-weight:400;
     color: white;
@@ -65,7 +69,8 @@ main{
     line-height: 30px;
 }
 .derecha {
-    height: 540px;
+    height: 400px;
+    width: 700px;
     float: right;
     display: flex;
 }
@@ -247,17 +252,25 @@ main{
     font-size: 15px;
     cursor: pointer;
 }
-.imagen_der, .imagen_izq {
-    height: 400px;
-    width: 400px;
-    display: flex;
-    float: left;
-}
-
-.imagen_izq_1, .imagen_der_1 {
+.imagen_der, .imagen_izq, .imagen_centro {
     height: 350px;
     width: 350px;
     display: flex;
+    padding-right: 20px;
+    filter:grayscale(1);
+}
+.imagen_der:hover, .imagen_izq:hover, .imagen_centro:hover {
+    filter:grayscale(0);
+}
+.imagen_izq_1, .imagen_der_1, .imagen_centro_1 {
+    height: 350px;
+    width: 350px;
+    padding-left: 20px;
+    display: flex;
+    filter: grayscale(1);
+}
+.imagen_izq_1:hover, .imagen_der_1:hover, .imagen_centro_1:hover {
+    filter: grayscale(0);
 }
 .contenedor_branding, .contenedor_web {
     background-color: white;
@@ -266,6 +279,8 @@ main{
     padding-left: 20px;
     display: flex;
     gap: 1rem;
+    height: 400px;
+    width: 100%;
     }
 .info_ic .branding, .info_web .www {
     color: gray;
@@ -281,6 +296,7 @@ main{
     font-weight:200;
     font-size: 20px;
     margin-left: 45px;
+    margin-right: 10px;
     margin-top: 20px;
 }
 .info_ic .ic, .info_web .web {
