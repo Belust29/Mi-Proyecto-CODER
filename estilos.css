@@ -106,17 +106,13 @@ main{
     height: 400px;
     width: 500px;
     background-color: white;
-    color: black;
+    color: gray;
     text-align: left;
     font-family: roboto, sans-serif;
     font-weight:400;
     font-size: 25px;
     margin-left: 60px;
     line-height: 25px;
-}
-.item1 img {
-    width: 100px;
-    height: 100px;
 }
 .item1 p{
     color: black;
@@ -133,7 +129,7 @@ main{
     height: 400px;
     width: 500px;
     background-color: white;
-    color: black;
+    color: gray;
     text-align: left;
     font-family: roboto, sans-serif;
     font-weight:400;
@@ -153,7 +149,7 @@ main{
     height: 400px;
     width: 500px;
     background-color: white;
-    color: black;
+    color: gray;
     text-align: left;
     font-family: roboto, sans-serif;
     font-weight:400;
