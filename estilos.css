@@ -61,7 +61,7 @@ main{
     line-height: 100px;
 }
 .presentacion a:hover{
-    color: #333;
+    color:  rgb(47, 137, 105);
 }
 #parte1{
     background-color: white;
@@ -105,7 +105,7 @@ main{
     background-color: rgb(180, 217, 207);
 }
 .mas-info:hover {
-    background-color: black;
+    background-color:  rgb(47, 137, 105);
     color: white;
 }
 .formulario{
@@ -205,6 +205,27 @@ main{
     margin-left: 45px;
     margin-top: 20px;
 }
+
+p::selection {
+    background: rgb(47, 137, 105);
+    color: white;
+}
+h1::selection {
+    background: rgb(47, 137, 105);
+    color: white;
+}
+h2::selection {
+    background: rgb(47, 137, 105);
+    color: white;
+}
+.mas-info::selection {
+    background: rgb(47, 137, 105);
+    color: white;
+}
+a::selection {
+    background: rgb(47, 137, 105);
+    color: white;
+}
 footer{
     margin-top: 2rem;
     background-color: rgb(112, 196, 167);
@@ -236,4 +257,12 @@ footer i{
     line-height: 40px;
     color: white;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .contenedor1 {
+        flex-direction: column;
+    }
+
 }
