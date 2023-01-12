@@ -15,28 +15,6 @@ header{
     height: 80px;
     padding: 20px;
 }
-.logo{
-    text-transform: uppercase;
-    margin-left: 50px;
-    float: left;
-}
-.barra{
-    font-size: 20px;
-    letter-spacing: 5px;
-    margin-right: 50px;
-    float: right;
-}
-.barra ul li{
-    list-style: none;
-    display: inline-block;
-}
-.barra ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.barra a:hover{
-    text-decoration: underline;
-}
 main{
     height: auto;
     width: 100%;
@@ -94,82 +72,32 @@ main{
     padding: 60px;
 }
 .contenedor1{
-    height: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+.item{
     width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    align-content: center;
+    background-color:rgba(180, 217, 207, 0.363);
+    border-radius: 1rem;
+    overflow: hidden;
 }
-.item1{
-    height: 400px;
-    width: 500px;
-    background-color: white;
-    color: gray;
-    text-align: left;
-    font-family: roboto, sans-serif;
-    font-weight:400;
-    font-size: 25px;
-    margin-left: 60px;
-    line-height: 25px;
+.item img{
+    max-width: 100%;
 }
-.item1 p{
-    color: black;
-    text-align: left;
-    font-family: roboto, sans-serif;
-    font-weight:400;
-    font-size: 15px;
+.info{
+    padding: 2rem;
     display: flex;
-    gap: 2rem;
     flex-direction: column;
     align-items: start;
+    gap: 1rem;
+    padding-top: 20px;
 }
-.item2{
-    height: 400px;
-    width: 500px;
-    background-color: white;
+.item p{
     color: gray;
-    text-align: left;
-    font-family: roboto, sans-serif;
-    font-weight:400;
-    font-size: 25px;
-    /* line-height: 120px; */
-    margin-left: 60px;
-    line-height: 25px;
 }
-.item2 p{
-    color: black;
-    text-align: left;
-    font-family: roboto, sans-serif;
-    font-weight:400;
-    font-size: 15px;
-}
-.item3{
-    height: 400px;
-    width: 500px;
-    background-color: white;
-    color: gray;
-    text-align: left;
-    font-family: roboto, sans-serif;
-    font-weight:400;
-    font-size: 25px;
-    margin-left: 60px;
-    line-height: 25px;
-}
-.item3 p{
-    color: black;
-    text-align: left;
-    font-family: roboto, sans-serif;
-    font-weight:400;
-    font-size: 15px;
-}
-.item1 a, .item2 a, .item3 a{
-    font-family: roboto, sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 15px;
-}
+
 .mas-info{
     text-decoration: none;
     padding: .5rem;
@@ -180,15 +108,8 @@ main{
     background-color: black;
     color: white;
 }
-.presentacion a:hover{
-    color: #333;
-}
-#parte2{
-    color: rgb(180, 217, 207);
-    font-family: roboto, sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    padding: 40px;
+.formulario{
+    max-width: 1200px;
 }
 .form, .contacto{
     width: 600px;
@@ -199,6 +120,7 @@ main{
     font-weight:400;
     color: gray;
     font-size: 18px;
+    padding: 15px;
     background-color: white;
 }
 .contacto label, .contacto input, .contacto textarea{
@@ -284,6 +206,7 @@ main{
     margin-top: 20px;
 }
 footer{
+    margin-top: 2rem;
     background-color: rgb(112, 196, 167);
     color: white;
     font-size: 20px;
