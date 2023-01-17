@@ -45,10 +45,12 @@ padding-left: 70px;
     text-align: left;
     font-family: Roboto, sans-serif;
 }
-.contenedor_ic, .contenedor_web, .contenedor_instagram{
+.cont-img{
+    background-image: url(imagenes/fotoMain.png);
+    background-size: cover;
     height: 380px;
 }
-.cont-img{
+.cont-img_ic{
     background-image: url(imagenes/c4.png);
     background-size: cover;
     height: 380px;
@@ -97,12 +99,14 @@ aside a:hover{
     padding: 80px;
 }
 .contenedor1{
+    height: 800px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     gap: 1rem;
 }
 .item{
+    height: 600px;
     width: 100%;
     background-color:rgba(180, 217, 207, 0.363);
     border-radius: 1rem;
