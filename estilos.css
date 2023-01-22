@@ -25,20 +25,20 @@ html{
     font-size: 20px;
     padding: 20px;
 }
-.presentacion_servicios h2, .presentacion_contacto h2, .presentacion_proyectos h2, .presentacion_sobremi h2{
+.presentacion_servicios h2, .presentacion_contacto h2, .presentacion_proyectos h2, .presentacion_bio h2{
     color: white;
     font-family: roboto, sans-serif;
     font-weight:400;
     font-size: 50px;
 }
-.presentacion_servicios p, .presentacion_contacto p, .presentacion_proyectos p, .presentacion_sobremi p{
+.presentacion_servicios p, .presentacion_contacto p, .presentacion_proyectos p, .presentacion_bio p{
 color: white;
 font-family: roboto, sans-serif;
 font-weight:200;
 font-size: 20px;
 padding-left: 70px;
 }
-.presentacion_servicios, .presentacion_contacto, .presentacion_proyectos, .presentacion_sobremi {
+.presentacion_servicios, .presentacion_contacto, .presentacion_proyectos, .presentacion_bio {
     height: 200px;
     background-color:  rgb(180, 217, 207);
     color: white;
@@ -50,6 +50,8 @@ padding-left: 70px;
     background-size: cover;
     height: 380px;
 }
+
+
 .cont-img_ic{
     background-image: url(imagenes/c4.png);
     background-size: cover;
@@ -434,6 +436,11 @@ footer i{
     }
     .form, .contacto{
         width: 400px;
+    }
+
+    .container-fluid{
+        flex-direction: column;
+        
     }
 
     .grilla{
