@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font1: roboto, sans-serif;
+$color1: white;
+$color2:  rgb(180, 217, 207);  
+$color3:  rgb(47, 137, 105);
+$color4: gray;
+
 *{
     margin: 0;
     padding: 0;
@@ -9,40 +16,40 @@ html{
 }
 .contenedor aside{
     height: 380px;
-    background-color:  rgb(180, 217, 207);
+    background-color: $color2;
 }
 
 .contenedor h2{
-    color: white;
-    font-family: roboto, sans-serif;
+    color: $color1;
+    font-family: $font1;
     font-weight:400;
     font-size: 50px;
     padding: 20px;
 }
 .contenedor p{
-    color: white;
-    font-family: roboto, sans-serif;
+    color: $color1;
+    font-family: $font1;
     font-weight:200;
     font-size: 20px;
     padding: 20px;
 }
 .presentacion_servicios h2, .presentacion_contacto h2, .presentacion_proyectos h2, .presentacion_bio h2{
-    color: white;
-    font-family: roboto, sans-serif;
+    color: $color1;
+    font-family: $font1;
     font-weight:400;
     font-size: 50px;
 }
 .presentacion_servicios p, .presentacion_contacto p, .presentacion_proyectos p, .presentacion_bio p{
-color: white;
-font-family: roboto, sans-serif;
+color: $color1;
+font-family: $font1;
 font-weight:200;
 font-size: 20px;
 padding-left: 70px;
 }
 .presentacion_servicios, .presentacion_contacto, .presentacion_proyectos, .presentacion_bio {
     height: 200px;
-    background-color:  rgb(180, 217, 207);
-    color: white;
+    background-color: $color2;
+    color: $color1;
     text-align: left;
     font-family: Roboto, sans-serif;
 }
@@ -69,34 +76,34 @@ padding-left: 70px;
     height: 380px;
 }
 aside{
-    background-color: white;
+    background-color: $color1;
     height: 380px;
 }
 aside p, h2 {
-    color: grey;
+    color: $color4;
     text-align: left;
     font-family: Roboto, sans-serif;
     padding: 20px;
     margin-left: 45px;
 }
 aside a {
-    font-family: roboto, sans-serif;
+    font-family: $font1;
     font-weight: bold;
-    color: white;
+    color: $color1;
     margin-left: 45px;
     padding: 20px;
     text-transform: uppercase;
     line-height: 100px;
 }
 aside a:hover{
-    color:  rgb(47, 137, 105);
+    color:  $color3;
 }
 
 #parte1{
     height: 200px;
-    background-color: white;
+    background-color: $color1;
     color: rgb(180, 217, 207);
-    font-family: roboto, sans-serif;
+    font-family: $font1;
     font-weight:400;
     font-size: 40px;
     padding: 80px;
@@ -142,7 +149,7 @@ aside a:hover{
 }
 .mas-info:hover {
     background-color:  rgb(47, 137, 105);
-    color: white;
+    color: $color1;
 }
 
 
@@ -186,12 +193,12 @@ aside a:hover{
     width: 600px;
     top: 35%;
     margin-left: 60px;
-    font-family: roboto, sans-serif;
+    font-family: $font1;
     font-weight:400;
     color: gray;
     font-size: 18px;
     padding: 15px;
-    background-color: white;
+    background-color: $color1;
 }
 .contacto label, .contacto input, .contacto textarea{
     display: block;
@@ -223,23 +230,23 @@ aside a:hover{
 
 p::selection {
     background: rgb(47, 137, 105);
-    color: white;
+    color: $color1;
 }
 h1::selection {
     background: rgb(47, 137, 105);
-    color: white;
+    color: $color1;
 }
 h2::selection {
     background: rgb(47, 137, 105);
-    color: white;
+    color: $color1;
 }
 .mas-info::selection {
     background: rgb(47, 137, 105);
-    color: white;
+    color: $color1;
 }
 a::selection {
     background: rgb(47, 137, 105);
-    color: white;
+    color: $color1;
 }
 
 .grilla{
@@ -382,7 +389,7 @@ a::selection {
     height: 100px;
 }
 .contenedor-pilares h2{
-    color: white;
+    color: $color1;
 }
 .pilares{
     height: 350px;
@@ -423,7 +430,7 @@ a::selection {
 footer{
     margin-top: 0px;
     background-color: rgb(112, 196, 167);
-    color: white;
+    color: $color1;
     font-size: 20px;
     font-family: Roboto, sans-serif;
     padding-block: 2rem;
@@ -438,7 +445,7 @@ footer p{
 footer i{
     font-size: 20px;
     letter-spacing: 10px;
-    color: white;
+    color: $color1;
 }
 .subir{
     height: 40px;
@@ -449,12 +456,16 @@ footer i{
     right: 40px;
     text-align: center;
     line-height: 40px;
-    color: white;
+    color: $color1;
     border-radius: 20px;
 }
 
 @media screen and (max-width: 700px) {
 
+    .aside{
+        height: 800px;
+        background-color: $color2;
+    }
     .contenedor1, .contenedor_proyectos {
         flex-direction: column;
         flex-wrap: wrap;
@@ -571,4 +582,5 @@ footer i{
         "foto9 foto10"
         "foto11 foto12";
     }
+
 }
