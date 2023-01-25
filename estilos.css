@@ -1,24 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
+header{
+    height: 800px;
+}
 .contenedor aside {
-  height: 380px;
-  background-color: rgb(180, 217, 207);
+    height: 380px;
+    background-color: rgb(180, 217, 207);
 }
-.contenedor asidecontenedor h2 {
-  color: white;
-  font-family: roboto, sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  padding: 20px;
+.contenedor h2 {
+    color: white;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 20px;
+    width: 80%;
 }
 
 .contenedor p {
@@ -27,6 +29,7 @@ html {
   font-weight: 200;
   font-size: 20px;
   padding: 20px;
+  width: 80%;
 }
 
 .presentacion_servicios h2, .presentacion_contacto h2, .presentacion_proyectos h2, .presentacion_bio h2 {
@@ -57,7 +60,7 @@ html {
   background-size: cover;
   height: 380px;
 }
-
+ 
 .cont-img_ic {
   background-image: url(imagenes/c4.png);
   background-size: cover;
@@ -67,12 +70,14 @@ html {
 .cont-img_web {
   background-image: url(imagenes/c5.png);
   background-size: cover;
+  background-position: center;
   height: 380px;
 }
 
 .cont-img_instagram {
   background-image: url(imagenes/c2.png);
   background-size: cover;
+  background-position: center;
   height: 380px;
 }
 
@@ -87,6 +92,7 @@ aside p, h2 {
   font-family: Roboto, sans-serif;
   padding: 20px;
   margin-left: 45px;
+  width: 80%;
 }
 
 aside a {
@@ -104,25 +110,28 @@ aside a:hover {
 }
 
 #parte1 {
-  height: 200px;
+  height: 150px;
   background-color: white;
   color: rgb(180, 217, 207);
   font-family: roboto, sans-serif;
   font-weight: 400;
   font-size: 40px;
-  padding: 80px;
+  padding: 60px;
+  align-items: center;
 }
 
 .contenedor1 {
-  height: 800px;
+  height: 550px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 1rem;
+  align-items: center;
+  padding-top: 0px;
 }
 
 .item {
-  height: 600px;
+  height: 550px;
   width: 100%;
   background-color: rgba(180, 217, 207, 0.363);
   border-radius: 1rem;
@@ -445,7 +454,6 @@ a::selection {
   max-width: 100%;
   background-image: url(imagenes/bio.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   height: 600px;
 }
@@ -529,25 +537,35 @@ footer i {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .aside {
     height: 800px;
     background-color: rgb(180, 217, 207);
   }
-  .contenedor1, .contenedor_proyectos {
+   .contenedor_proyectos {
     flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
   }
-  .formulario {
-    max-width: 100%;
-  }
+.presentacion_contacto{
+    height: 300px;
+}
+.presentacion_contacto p{
+    padding: 20px;
+    text-align: center;
+}
   .form, .contacto {
-    width: 400px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .contacto label {
+    font-size: 15px;
+    padding: 5px;
   }
   .container-fluid {
-    flex-direction: column;
+    flex-direction: row;
   }
+
   .grilla {
     grid-gap: 20px;
     grid-template-columns: 400px;
@@ -618,13 +636,13 @@ footer i {
     transform: none;
     transition: none;
   }
-}
-@media screen and (max-width: 1080px) {
-  .grilla {
-    grid-gap: 20px;
-    grid-template-columns: 400 400px;
-    align-content: center;
-    align-items: center;
-    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8" "foto9 foto10" "foto11 foto12";
+  footer { 
+    padding-block: 1rem;
+    padding-inline: 1rem;
   }
-}/*# sourceMappingURL=estilos.css.map */
+  footer p{
+    font-size: 80%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map 
