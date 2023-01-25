@@ -17,21 +17,23 @@ html{
 .contenedor aside{
     height: 380px;
     background-color: $color2;
-}
 
-.contenedor h2{
+    & h2 {
     color: $color1;
     font-family: $font1;
     font-weight:400;
     font-size: 50px;
     padding: 20px;
-}
-.contenedor p{
+    }
+
+    & p {
     color: $color1;
     font-family: $font1;
     font-weight:200;
     font-size: 20px;
     padding: 20px;
+    }
+
 }
 .presentacion_servicios h2, .presentacion_contacto h2, .presentacion_proyectos h2, .presentacion_bio h2{
     color: $color1;
