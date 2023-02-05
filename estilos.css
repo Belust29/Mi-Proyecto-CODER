@@ -8,13 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 header{
-    height: 800px;
+    height: 400px;
 }
 .contenedor aside {
     height: 380px;
     background-color: rgb(180, 217, 207);
 }
-.contenedor h2 {
+.contenedor h1 {
     color: white;
     font-family: roboto, sans-serif;
     font-weight: 400;
@@ -28,8 +28,15 @@ header{
   font-family: roboto, sans-serif;
   font-weight: 200;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
+  margin-left: 10px;
   width: 80%;
+}
+
+.contenedor_bio p{
+  margin-top: 30px;
+  margin-left: 15px;
+  width: 90%;
 }
 
 .presentacion_servicios h2, .presentacion_contacto h2, .presentacion_proyectos h2, .presentacion_bio h2 {
@@ -47,6 +54,11 @@ header{
   padding-left: 70px;
 }
 
+.color_parrafo{
+  font-weight: bold;
+  color: rgb(112, 196, 167);
+}
+
 .presentacion_servicios, .presentacion_contacto, .presentacion_proyectos, .presentacion_bio {
   height: 200px;
   background-color: rgb(180, 217, 207);
@@ -55,23 +67,30 @@ header{
   font-family: Roboto, sans-serif;
 }
 
+.presentacion_bio_size, .presentacion_contacto_size, .presentacion_proyectos_size, .presentacion_servicios_size{
+  height: 200px;
+}
+
 .cont-img {
   background-image: url(imagenes/fotoMain.png);
   background-size: cover;
-  height: 380px;
+  height: auto;
+  display: flex;
 }
- 
+
 .cont-img_ic {
   background-image: url(imagenes/ic.jpg);
   background-size: cover;
-  height: 380px;
+  height: auto;
+  display: flex;
 }
 
 .cont-img_web {
   background-image: url(imagenes/web.jpg);
   background-size: cover;
   background-position: center;
-  height: 380px;
+  height: auto;
+  display: flex;
 }
 
 .cont-img_instagram {
@@ -100,7 +119,7 @@ aside a {
   font-family: roboto, sans-serif;
   font-weight: bold;
   color: white;
-  margin-left: 45px;
+  margin-left: 10px;
   padding: 20px;
   text-transform: uppercase;
   line-height: 100px;
@@ -111,13 +130,14 @@ aside a:hover {
 }
 
 #parte1 {
-  height: 150px;
+  margin-top: 0;
   background-color: white;
   color: rgb(180, 217, 207);
   font-family: roboto, sans-serif;
   font-weight: 400;
   font-size: 40px;
-  padding: 60px;
+  padding: 20px;
+  margin-left: 20px;
   align-items: center;
 }
 
@@ -126,14 +146,12 @@ aside a:hover {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   gap: 1rem;
   align-items: center;
   padding-top: 0px;
 }
 
 .item {
-  height: 550px;
   width: 100%;
   background-color: rgba(180, 217, 207, 0.363);
   border-radius: 1rem;
@@ -158,6 +176,7 @@ aside a:hover {
 }
 
 .mas-info {
+  gap: 1rem;
   text-decoration: none;
   padding: 0.5rem;
   color: rgb(255, 255, 255);
@@ -302,17 +321,19 @@ a::selection {
 }
 
 .grilla {
-  width: 100%;
   height: auto;
+  width: 100%;
   display: grid;
-  grid-template-columns: 400px 400px 400px 400px;
-  grid-template-rows: 400px 400px 400px;
-  grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8" "foto9 foto10 foto11 foto12";
-  grid-gap: 10px;
-  align-content: center;
-  justify-content: center;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(3, 400px);
+  grid-template-areas:
+  "foto1 foto2 foto3 foto4"
+  "foto5 foto6 foto7 foto8"
+  "foto9 foto10 foto11 foto12";
   justify-items: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .itemg {
@@ -322,51 +343,69 @@ a::selection {
   background-position: center;
 }
 
+.itemg:hover{
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 .item1 {
+  grid-area: foto1;
   background-image: url(imagenes/1.jpg);
 }
 
 .item2 {
+  grid-area: foto2;
   background-image: url(imagenes/2.jpg);
 }
 
 .item3 {
+  grid-area: foto3;
   background-image: url(imagenes/3.jpg);
 }
 
 .item4 {
+  grid-area: foto4;
   background-image: url(imagenes/4.png);
 }
 
 .item5 {
+  grid-area: foto5;
   background-image: url(imagenes/5.jpg);
 }
 
 .item6 {
+  grid-area: foto6;
   background-image: url(imagenes/6.png);
 }
 
 .item7 {
+  grid-area: foto7;
   background-image: url(imagenes/7.jpg);
 }
 
 .item8 {
+  grid-area: foto8;
   background-image: url(imagenes/8.jpg);
 }
 
 .item9 {
+  grid-area: foto9;
   background-image: url(imagenes/9.png);
 }
 
 .item10 {
+  grid-area: foto10;
   background-image: url(imagenes/10.png);
 }
 
 .item11 {
+  grid-area: foto11;
   background-image: url(imagenes/11.jpg);
 }
 
 .item12 {
+  grid-area: foto12;
   background-image: url(imagenes/12.jpg);
 }
 
@@ -374,84 +413,13 @@ a::selection {
   filter: grayscale(1);
 }
 
-.item1:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item2:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item3:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item4:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item5:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item6:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item7:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item8:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item9:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item10:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item11:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.item12:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-  transition: 1s;
-}
 
 .cont-img_bio {
   max-width: 100%;
   background-image: url(imagenes/bio.jpg);
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 500px;
 }
 
 .contenedor-pilares {
@@ -500,12 +468,12 @@ a::selection {
 
 footer {
   margin-top: 0px;
+  position: fixed bottom;
   background-color: rgb(112, 196, 167);
   color: white;
   font-size: 20px;
   font-family: Roboto, sans-serif;
-  padding-block: 2rem;
-  padding-inline: 6rem;
+  padding: 4rem;
   display: flex;
   justify-content: space-between;
   max-width: 100%;
@@ -534,18 +502,18 @@ footer i {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .aside {
     height: 800px;
     background-color: rgb(180, 217, 207);
   }
-   .contenedor_proyectos {
+
+  .contenedor_proyectos {
     flex-direction: column;
     text-align: center;
   };
-
 .presentacion_contacto{
-    height: 300px;
+    height: 100vh;
 }
 .presentacion_contacto p{
     padding: 20px;
@@ -553,22 +521,26 @@ footer i {
 }
   .form, .contacto {
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+  
+  
   }
   .contacto label {
     font-size: 15px;
     padding: 5px;
   }
-  .container-fluid {
+  .container-fluid .contenedor1{
+    display: flex;
     flex-direction: row;
   }
 
   .grilla {
-    grid-template-columns: 400px;
-    align-content: center;
+    grid-template-columns: 350px;
+    grid-template-rows: 350px;
+    justify-items: center;
     align-items: center;
-    grid-template-areas: 
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
     "foto1"
     "foto2"
     "foto3"
@@ -585,75 +557,21 @@ footer i {
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12 {
     filter: none;
   }
-  .item1:hover {
+  .itemg:hover {
     filter: none;
     transform: none;
     transition: none;
   }
-  .item2:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item3:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item4:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item5:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item6:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item7:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item8:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item9:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item10:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item11:hover {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
-  .item12.contacto {
-    filter: none;
-    transform: none;
-    transition: none;
-  }
+
   footer { 
-    padding-block: 1rem;
-    padding-inline: 1rem;
+  padding: 10px;
   }
+
   footer p{
-    font-size: 80%;
+    font-size: 70%;
   }
   .pilares {
-    height: 800px;
+    height: 100vh;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
