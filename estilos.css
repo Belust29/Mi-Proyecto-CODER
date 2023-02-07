@@ -8,12 +8,47 @@ html {
     scroll-behavior: smooth;
 }
 header{
-    height: 400px;
+    height: auto;
 }
+
+.cye{
+  height: 550px;
+  padding: 5px;
+}
+
+.bio{
+  height: 300px;
+  padding: 20px;
+}
+
+.contenedorcye {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor{
+  width: 100%;
+}
+
+.row, .col {
+  justify-content: center;
+  display: flex;
+}
+
+.grid-servicios{
+  display: flex;
+  gap: 1rem;
+  padding: 15px;
+  
+}
+
+
 .contenedor aside {
     height: 380px;
     background-color: rgb(180, 217, 207);
 }
+
 .contenedor h1 {
     color: white;
     font-family: roboto, sans-serif;
@@ -23,14 +58,53 @@ header{
     width: 80%;
 }
 
-.contenedor p {
+.contenedor h2{
+  margin: 20px;
+  font-size: 40px;
+}
+
+.contenedor p, .card p, a {
   color: white;
   font-family: roboto, sans-serif;
-  font-weight: 200;
-  font-size: 20px;
   padding: 10px;
   margin-left: 10px;
+}
+.card p {
+  font-size: 25px;
+  font-weight:100;
+  width: 90%;
+}
+
+a{
+  text-transform:uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 100px;
+}
+
+.contenedor p{
   width: 80%;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.col-md-5 .col-md-7{
+  padding: 0px;
+}
+.card {
+  background-color:rgb(180, 217, 207); 
+}
+
+.card-body-bio{
+  height: 200px;
+}
+
+.card h5{
+  color:white;
+  font-size: 55px;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  width: 70%;
 }
 
 .contenedor_bio p{
@@ -51,7 +125,7 @@ header{
   font-family: roboto, sans-serif;
   font-weight: 200;
   font-size: 20px;
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .color_parrafo{
@@ -78,41 +152,110 @@ header{
   display: flex;
 }
 
-.cont-img_ic {
-  background-image: url(imagenes/ic.jpg);
-  background-size: cover;
-  height: auto;
-  display: flex;
-}
-
-.cont-img_web {
-  background-image: url(imagenes/web.jpg);
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  display: flex;
-}
-
-.cont-img_instagram {
-  background-image: url(imagenes/ig.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 380px;
-}
-
-aside {
-  background-color: white;
-  height: 380px;
-}
-
-aside p, h2 {
+h2{
   color: gray;
   text-align: left;
   font-family: Roboto, sans-serif;
   padding: 20px;
   margin-left: 45px;
   width: 80%;
+}
+.card{
+  border-radius: 0;
+}
+
+.card-title {
+  font-size: 40px;
+  color: gray;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  padding: 20px;
+}
+
+.color-index {
+  background-color:  rgb(180, 217, 207);
+}
+
+.btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 217, 207);
+  padding: 5px;
+  gap: 1rem;
+  align-items: start;
+
+}
+.card-index p{
+  color: gray;
+}
+
+.card-text, .grid-servicios p {
+  color: gray;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  padding: 15px;
+  width: 80%;
+}
+
+.card-body-index p, .grid-servicios p {
+  color: gray;
+  font-size: 15px;
+  margin: 10px;
+}
+
+
+.card-title-index {
+  color: gray;
+  margin: 15px;
+}
+
+.card-body-bio p{
+  color:black;
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.card-title-bio {
+  margin: 20px;
+  width: 80%;
+}
+
+.grid-servicios h4 {
+  color:black;
+  font-size: 40px;
+  font-weight:300;
+  width: 20%;
+  margin: 10px;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+
+.grid-servicios h5 {
+  color: black;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight:200;
+  margin: 10px;
+  margin-top: 15px;
+  margin-left: 45px;
+}
+
+.grid-servicios img{
+}
+
+.grid-servicios p {
+  color: gray;
+  font-size: 20px;
+  font-weight:300;
+  width: 80%;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.card-index, .card-bio{
+  background-color:rgb(217, 242, 235);
 }
 
 aside a {
@@ -125,7 +268,7 @@ aside a {
   line-height: 100px;
 }
 
-aside a:hover {
+a:hover {
   color: rgb(47, 137, 105);
 }
 
@@ -151,6 +294,7 @@ aside a:hover {
   padding-top: 0px;
 }
 
+
 .item {
   width: 100%;
   background-color: rgba(180, 217, 207, 0.363);
@@ -175,15 +319,8 @@ aside a:hover {
   color: gray;
 }
 
-.mas-info {
-  gap: 1rem;
-  text-decoration: none;
-  padding: 0.5rem;
-  color: rgb(255, 255, 255);
-  background-color: rgb(180, 217, 207);
-}
 
-.mas-info:hover {
+.btn:hover {
   background-color: rgb(47, 137, 105);
   color: white;
 }
@@ -223,6 +360,12 @@ aside a:hover {
   display: flex;
 }
 
+.presentacion_contacto p{
+  color:darkgreen;
+  font-weight: bold;
+  width: 75%;
+}
+  
 .formulario {
   max-width: 100%;
 }
@@ -280,22 +423,12 @@ p::selection {
   color: white;
 }
 
-h1::-moz-selection {
+h1::-moz-selection, h2::-moz-selection,  h5::-moz-selection {
   background: rgb(47, 137, 105);
   color: white;
 }
 
-h1::selection {
-  background: rgb(47, 137, 105);
-  color: white;
-}
-
-h2::-moz-selection {
-  background: rgb(47, 137, 105);
-  color: white;
-}
-
-h2::selection {
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection {
   background: rgb(47, 137, 105);
   color: white;
 }
@@ -321,8 +454,6 @@ a::selection {
 }
 
 .grilla {
-  height: auto;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 400px);
   grid-template-rows: repeat(3, 400px);
@@ -413,7 +544,6 @@ a::selection {
   filter: grayscale(1);
 }
 
-
 .cont-img_bio {
   max-width: 100%;
   background-image: url(imagenes/bio.jpg);
@@ -432,12 +562,17 @@ a::selection {
 }
 
 .pilares {
-  height: 350px;
-  max-width: 1200px;
+  padding: 20px;
+  max-width: 100%;
+  height: 200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
+}
+
+.pilares h3{
+  width: 100%;
 }
 
 .pilar {
@@ -467,26 +602,17 @@ a::selection {
 }
 
 footer {
-  margin-top: 0px;
-  position: fixed bottom;
+  width: 100%;
+  left: 0;
+  padding: 2rem 8% ;
   background-color: rgb(112, 196, 167);
   color: white;
   font-size: 20px;
   font-family: Roboto, sans-serif;
-  padding: 4rem;
   display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-}
-
-footer p {
-  margin-bottom: 20px;
-}
-
-footer i {
-  font-size: 20px;
-  letter-spacing: 10px;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .subir {
@@ -494,48 +620,41 @@ footer i {
   width: 40px;
   background-color: rgb(180, 217, 207);
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 20px;
+  line-height: 20px;
   text-align: center;
-  line-height: 40px;
+  align-items: center;
   color: white;
   border-radius: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  .aside {
-    height: 800px;
-    background-color: rgb(180, 217, 207);
-  }
+@media screen and (max-width: 400px) {
+
 
   .contenedor_proyectos {
     flex-direction: column;
     text-align: center;
   };
-.presentacion_contacto{
-    height: 100vh;
-}
 .presentacion_contacto p{
     padding: 20px;
     text-align: center;
+    font-size: 10px
+
 }
   .form, .contacto {
     width: 100%;
-  
-  
+    padding: 0px;
+    margin: 0px;
   }
   .contacto label {
     font-size: 15px;
     padding: 5px;
   }
-  .container-fluid .contenedor1{
-    display: flex;
-    flex-direction: row;
-  }
 
   .grilla {
-    grid-template-columns: 350px;
-    grid-template-rows: 350px;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px;
     justify-items: center;
     align-items: center;
     justify-content: center;
@@ -563,13 +682,6 @@ footer i {
     transition: none;
   }
 
-  footer { 
-  padding: 10px;
-  }
-
-  footer p{
-    font-size: 70%;
-  }
   .pilares {
     height: 100vh;
     max-width: 100%;
@@ -582,6 +694,14 @@ footer i {
     color: white;
     text-align: center;
     align-items: center;
+  }
+  .grid-servicios{
+    display: grid;
+    gap: 1rem;
+  }
+
+  footer {
+    bottom: 0;
   }
 }
 
